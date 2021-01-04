@@ -52,7 +52,7 @@ public class Main {
                         System.out.println("Numero de paraules: " + codi.nParaules(text));
                         break;
                     case 5:
-                        System.out.println();
+                        codi.repeticionsCaracters(text);
 
                         break;
                     case 6:

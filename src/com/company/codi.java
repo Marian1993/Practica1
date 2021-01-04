@@ -39,13 +39,13 @@ public class codi {
         }
         return numParaules;
     }
-    public static int[] repeticionsCaracters (String text){
+    public static void repeticionsCaracters (String text){
 
         String[] arrayText = text.split(" ");
 
         char[] caracters =  {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s',
                 't','u','v','w','x','y','z','.',',','?','!',':'};
-        
+
         int[] numRepeticions = new int[caracters.length];
 
         for (int i = 0; i < arrayText.length ; i++) {
@@ -63,16 +63,11 @@ public class codi {
         }
         for (int i = 0; i < caracters.length; i++) {
 
-            for (int j = 0; j < numRepeticions[i]; j++) {
+            if (numRepeticions[i] >= 1){
 
-                if (numRepeticions[j] >= 1){
-
-                    System.out.println();
-                }
+                System.out.println("Els caracter que es repeteix es: " + caracters[i] +" amb "+ numRepeticions[i] + " repeticions");
             }
-
         }
-
     }
 
 }
