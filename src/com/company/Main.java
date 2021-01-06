@@ -39,28 +39,28 @@ public class Main {
                 switch (opcio) {
 
                     case 1:
-                        System.out.print("Escriu el nou text: ");
+
                         System.out.println(text = codi.textNou(text));
                         break;
                     case 2:
                         System.out.println("Text introduït: "+ text);
                         break;
                     case 3:
-                        System.out.println("Numero de lletres: " + codi.nLletres(text));
+                        System.out.println(codi.nLletres(text));
                         break;
                     case 4:
-                        System.out.println("Numero de paraules: " + codi.nParaules(text));
+                        System.out.println(codi.nParaules(text));
                         break;
                     case 5:
                         codi.repeticionsCaracters(text);
 
                         break;
                     case 6:
-                        System.out.println();
+                        System.out.println(codi.caracterINumrepeticions(text));
 
                         break;
                     case 7:
-                        System.out.println();
+                        System.out.println(codi.paraulaINumRepeticions(text));
 
                         break;
                     case 8:
