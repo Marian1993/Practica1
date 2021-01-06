@@ -152,10 +152,22 @@ public class codi {
                 }
             }
         }
-        return "El caracter es repeteix " + repeticions + " vegades";
+        return "El caracter " + vocal + " es repeteix " + repeticions + " vegades";
     }
     public static String numParaula(String text, String paraula){
 
+        String[] arrayText = text.split(" ");
+
+        int repeticions = 0;
+
+        for (int i = 0; i < arrayText.length; i++) {
+
+            if(arrayText[i].equalsIgnoreCase(paraula)){
+
+                repeticions++;
+            }
+        }
+        return "La paraula " + paraula + " es repeteix " + repeticions + " vegades";
     }
 
 

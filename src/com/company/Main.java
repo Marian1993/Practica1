@@ -64,11 +64,15 @@ public class Main {
 
                         break;
                     case 8:
-                        System.out.println();
+                        System.out.print("Introdueix una vocal: ");
+                        char vocal = in.next().charAt(0);
+                        System.out.println(codi.numCaracter(text,vocal));
 
                         break;
                     case 9:
-                        System.out.println();
+                        System.out.print("Escriu la paraula: ");
+                        String paraula = in.nextLine();
+                        System.out.println(codi.numParaula(text,paraula));
 
                         break;
                     case 10:
