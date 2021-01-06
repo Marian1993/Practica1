@@ -71,7 +71,7 @@ public class Main {
                         break;
                     case 9:
                         System.out.print("Escriu la paraula: ");
-                        String paraula = in.nextLine();
+                        String paraula = in.next();
                         System.out.println(codi.numParaula(text,paraula));
 
                         break;
