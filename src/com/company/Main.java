@@ -32,6 +32,7 @@ public class Main {
             System.out.println();
 
 
+
             try {
                 System.out.print("Quina opcio vol elegir:");
                 opcio = in.nextInt();
